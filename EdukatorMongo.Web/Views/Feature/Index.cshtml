@@ -1,0 +1,39 @@
+﻿@model List<Feature>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-sm-12 col-xl-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Kategori Sayfası</h6>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+
+                    <th scope="col">Küçük Başlık</th>
+                    <th scope="col">Büyük Başlık</th>
+                    <th scope="col">Url</th>
+                    <th scope="col">sil</th>
+                    <th scope="col">Güncelle</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@item.Title1</td>
+                        <td>@item.Title2</td>
+                        <td>@item.VideoUrl</td>
+                        <td><a href="/Feature/Delete/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                        <td><a href="/Feature/Update/@item.Id" class="btn btn-outline-success">Güncelle</a></td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a href="/Feature/Add/" class="btn btn-outline-dark"> Ekle</a>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+bu projeye first cod yöntemýyle kuracaz
+
+9 ders
+burda projeler olusturuldu.daha sonra ýclerýne kulancagýmýz klasorlerý yerlestrýdýkü
+category ve course tablolarýný entýty katmanýna ekledýk
+github respository  olusturuldu ve projeyý oraya gönderdýk

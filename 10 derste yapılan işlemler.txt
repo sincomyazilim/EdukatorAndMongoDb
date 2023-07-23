@@ -1,0 +1,6 @@
+contactInfo tablosu olsuturduldu
+paketler kuruldu
+entity framework core  
+entity framework tools  migration ýcýndýr
+entity framework design migration ýcýndýr
+entity framework sqlserver

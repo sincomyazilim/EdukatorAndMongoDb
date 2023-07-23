@@ -1,0 +1,60 @@
+﻿@model AboutUsImage
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-sm-12 col-xl-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Hakkımda Resimli Kısım Ekleme Sayfası</h6>
+        <form method="post">
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Başlık</label>
+                <input type="text" class="form-control" id="c" asp-for="Title1">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Başlık</label>
+                <input type="text" class="form-control" id="c" asp-for="Title2">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Açıklama</label>
+                <input type="text" class="form-control" id="c" asp-for="Description">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Başlık1 </label>
+                <input type="text" class="form-control" id="c" asp-for="ImageTitle1">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Url</label>
+                <input type="text" class="form-control" id="c" asp-for="ImageUrl1">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Başlık2 </label>
+                <input type="text" class="form-control" id="c" asp-for="ImageTitle2">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Url</label>
+                <input type="text" class="form-control" id="c" asp-for="ImageUrl2">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Başlık3 </label>
+                <input type="text" class="form-control" id="c" asp-for="ImageTitle3">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Url</label>
+                <input type="text" class="form-control" id="c" asp-for="ImageUrl3">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Başlık4 </label>
+                <input type="text" class="form-control" id="c" asp-for="ImageTitle4">
+            </div>
+            <div class="mb-3">
+                <label for="CategoryName" class="form-label">Url</label>
+                <input type="text" class="form-control" id="c" asp-for="ImageUrl4">
+            </div>
+            <button type="submit" class="btn btn-primary">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+

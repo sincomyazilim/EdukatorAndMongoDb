@@ -1,0 +1,62 @@
+﻿@model List<AboutUsImage>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-sm-12 col-xl-12">
+    <div class="bg-light rounded h-100 p-4">
+        <h6 class="mb-4">Kategori Sayfası</h6>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+
+                    <th scope="col">Başlık1</th>
+                    <th scope="col">Başlık2</th>
+                    <th scope="col">Açıklama</th>
+                    <th scope="col">Url1</th>
+                    <th scope="col">UrlBaşlık1</th>
+                    <th scope="col">Url2</th>
+                    <th scope="col">UrlBaşlık2</th>
+                    <th scope="col">Url3</th>
+                    <th scope="col">UrlBaşlık3</th>
+                    <th scope="col">Url4</th>
+                    <th scope="col">UrlBaşlık4</th>
+                    <th scope="col">sil</th>
+                    <th scope="col">Güncelle</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@item.Title1</td>
+                        <td>@item.Title2</td>
+                        <td>@item.Description</td>                      
+
+
+                        <td>@item.ImageTitle1</td>
+                        <td>@item.ImageUrl1</td>
+
+                        <td>@item.ImageTitle2</td>
+                        <td>@item.ImageUrl2</td>
+
+                          <td>@item.ImageTitle3</td>
+                        <td>@item.ImageUrl3</td>
+
+                        <td>@item.ImageTitle4</td>
+                        <td>@item.ImageUrl4</td>
+                        <td><a href="/AboutUsImage/Delete/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                        <td><a href="/AboutUsImage/Update/@item.Id" class="btn btn-outline-success">Güncelle</a></td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a href="/AboutUsImage/Add/" class="btn btn-outline-dark"> Ekle</a>
+    </div>
+</div>
+
+
